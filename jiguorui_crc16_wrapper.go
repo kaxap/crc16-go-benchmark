@@ -41,7 +41,7 @@ type jigWrapper struct {
 }
 
 func newJigWrapper() *jigWrapper {
-	return &jigWrapper{0, make([]byte, 2, 2)}
+	return &jigWrapper{0xFFFF, make([]byte, 2, 2)}
 }
 
 func (h *jigWrapper) Sum(b []byte) []byte {
